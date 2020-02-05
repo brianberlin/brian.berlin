@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/berlin
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://brian.berlin
+  * I am berlin (https://keybase.io/berlin) on keybase.
+  * I have a public key ASCqtq-byjNrvifE1fsujiPJbbshXCNCgL4UuYXcrQCfHgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01201a47f9680ae9e55a92b73045a2e7ec0218951fc3a57548e030627c3667d950ec0a",
+      "host": "keybase.io",
+      "kid": "0120aab6af9bca336bbe27c4d5fb2e8e23c96dbb215c234280be14b985dcad009f1e0a",
+      "uid": "fb38a93fd89e1a5fc7852a5d7109e319",
+      "username": "berlin"
+    },
+    "merkle_root": {
+      "ctime": 1607563033,
+      "hash": "6173ea1fa7634651ec838aaf4f04d795c3126e2a866be532981cce626b0a875fdec376ebc934a961ce1717a09a74597c259cd95ac7742706189f05c9ff792960",
+      "hash_meta": "fa529ca1b8e5b8815c5d157b4c9bbdcc987a84e3a702103b6d086651db2f5aaf",
+      "seqno": 18363351
+    },
+    "service": {
+      "entropy": "kGIFlZuycGtFtgtbP4jptIMm",
+      "hostname": "brian.berlin",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1607563060,
+  "expire_in": 504576000,
+  "prev": "0be0a21c318828aab26168361bde7f9a3762bf427433aadf4f06d22b5237179b",
+  "seqno": 91,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgqravm8oza74nxNX7Lo4jyW27IVwjQoC+FLmF3K0Anx4Kp3BheWxvYWTESpcCW8QgC+CiHDGIKKqyYWg2G95/mjdiv0J0M6rfTwbSK1I3F5vEIAzbIQjcwRnhz0mRFrciIXzLfdAGYVy9EJLLTOA9xzYmAgHCo3NpZ8RAXFbRe+XUJUsAqlTlUHqa6VNrYaZtfmNZYDHsjYjBYxGvM2Eld9bVQmVyNArReUfuxismVjS9dEjFN3JvwtdhDahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEICIn2liOs6WW5j0hcFNHzHWHTKMaJrpTF487J6ZtWUSSo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/berlin
+
+==================================================================
