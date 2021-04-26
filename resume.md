@@ -15,12 +15,19 @@ I'm currently working as a senior level software engineer and coach at Revelry i
 - Postgres / MySQL / MongoDB / Redis / DynamoDB
 - Docker / Kubernetes
 
+# Open Source
+
+- [NervesHubWeb - Ability to delete accounts](https://github.com/nerves-hub/nerves_hub_web/pull/676)
+- [NervesHubWeb - Other contributions](https://github.com/nerves-hub/nerves_hub_web/pulls?q=is%3Apr+author%3Abrianberlin+is%3Aclosed)
+- [EctoFilters](https://hex.pm/packages/ecto_filters) - Provides a consistent way to transform request params into ecto query expressions.
+- [EctoExplain](https://hex.pm/packages/ecto_explain) - A simple Elixir package that makes explaining ecto queries easy. Here is a [short blog post](https://revelry.co/resources/development/ecto/)
+
 # Experience
 
 ## Revelry
 __Software Engineer / Engineering Coach (2018 - Present)__
 
-I have worked on several different and unique projects during my tenure at Revelry. In addtiion to development, I serve as an engineering coach at Revelry. This involves mentoring apprentices and junior engineers while helping them improve their skills. It has been incredibly rewarding guiding these apprentices and junior engineers to steadily accomplish goals that improve their career paths.  
+I have worked on several different and unique projects during my tenure at Revelry. In addition to my role as a software engineer, I serve as an engineering coach. This involves mentoring apprentices and junior engineers while helping them improve their skills. It has been incredibly rewarding guiding these apprentices and junior engineers to steadily accomplish goals that improve their career paths.
 
 ## 3Coasts
 __Owner (2011 - 2018)__
@@ -34,21 +41,13 @@ GradSquare's mission was to bridge the gap between universities and industry. A 
 
 As the sole techonologist for GradSquare I was the graphic designer and software engineer. Below are some screenshots of the application that was created.
 
- - [In App Messaging](https://brian.berlin/images/gradsquare/in-app-messaging.png)
- - [Find a Candidate](https://brian.berlin/images/gradsquare/find-a-candidate.png)
- - [Onboarding - Education](https://brian.berlin/images/gradsquare/onboarding-education.png)
- - [Onboarding - Education 2](https://brian.berlin/images/gradsquare/onboarding-education-2.png)
- - [Onboarding - Background](https://brian.berlin/images/gradsquare/onboarding-background.png)
- - [Find a Recruiter](https://brian.berlin/images/gradsquare/find-a-recruiter.png)
- - [Register](https://brian.berlin/images/gradsquare/register.png)
  - [Find a Job](https://brian.berlin/images/gradsquare/find-a-job.png)
- - [Find a Job 2](https://brian.berlin/images/gradsquare/find-a-job-2.png)
+ - [In App Messaging](https://brian.berlin/images/gradsquare/in-app-messaging.png)
 
 ### Airpnp
 __Co-Founder (2014)__
 
-The idea for Airpnp came while having drinks at a bar during Mardi Gras. It was a requirement that the patrons of the bar purchase a drink 
-(be a paying customer) in order to use the restroom. This started a conversation about an idea to create an "Airbnb for bathrooms". Host users of the app could make there restrooms available while other users could find nearby bathrooms and pay per pee (or pooh) in the app. Users could even contact the hosts via anonymized text and voice chat through the app. We leverages api services from twilio and stripe to make it all happen.
+The idea for Airpnp came while having drinks at a bar during Mardi Gras. It was a requirement that the patrons of the bar purchase a drink (be a paying customer) in order to use the restroom. This started a conversation about an idea to create an "Airbnb for bathrooms". Host users of the app could make there restrooms available while other users could find nearby bathrooms and pay per pee (or pooh) in the app. Users could even contact the hosts via anonymized text and voice chat through the app. We leverages api services from twilio and stripe to make it all happen.
 
  - [Product Hunt](https://www.producthunt.com/posts/airpnp)
  - [Buzzfeed](https://www.buzzfeednews.com/article/josephbernstein/i-spent-a-day-using-an-app-for-bathroom-emergencies-and-i-al)
@@ -61,10 +60,3 @@ My introduction to software engineering was made possible through my job at Bcli
 
  - [Sonny's Car Wash Dual Screen Kiosk](https://brian.berlin/images/bclip/sonnys-kiosk.jpeg)
  - [Sonny's Car Wash Touch Screen Kiosk](https://brian.berlin/images/bclip/sonnys-kiosk-2.jpeg)
-
- # Open Source
-
-- [NervesHubWeb - Ability to delete accounts](https://github.com/nerves-hub/nerves_hub_web/pull/676)
-- [NervesHubWeb - Other contributions](https://github.com/nerves-hub/nerves_hub_web/pulls?q=is%3Apr+author%3Abrianberlin+is%3Aclosed)
-- [EctoFilters](https://hex.pm/packages/ecto_filters) - Provides a consistent way to transform request params into ecto query expressions.
-- [EctoExplain](https://hex.pm/packages/ecto_explain) - A simple Elixir package that makes explaining ecto queries easy. Here is a [short blog post](https://revelry.co/resources/development/ecto/)
