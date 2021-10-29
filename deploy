@@ -1,0 +1,10 @@
+#! /usr/bin/env bash
+set -e
+npm i
+npm run compile-sass
+aws s3 cp fonts s3://brian.berlin/fonts --recursive --acl public-read
+aws s3 cp images s3://brian.berlin/images --recursive --acl public-read
+aws s3 cp favicon.ico s3://brian.berlin/favicon.ico --acl public-read
+aws s3 cp app.css s3://brian.berlin/app.css --acl public-read
+aws s3 cp index.html s3://brian.berlin/index.html --acl public-read
+aws s3 cp keybase.txt s3://brian.berlin/keybase.txt --acl public-read
