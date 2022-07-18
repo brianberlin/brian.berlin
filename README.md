@@ -4,13 +4,11 @@
 - [bri@nberl.in](mailto:bri@nberl.in) 
 - [Github](https://github.com/brianberlin) 
 
-I'm currently working as a senior level software engineer and coach at Revelry in New Orleans. 
-
-[More about me](https://revelry.co/resources/team/brian-berlin/)
+I'm currently working as a senior software engineer at Peek. 
 
 # Technical Skills
 
-- Elixir / Erlang / OTP / Phoenix / Liveview / Nerves
+- Elixir / Erlang / OTP / Phoenix / GraphQL / Liveview / Nerves
 - React / Redux / React Native / Javascript / NodeJS
 - Postgres / MySQL / MongoDB / Redis / DynamoDB
 - Docker / Kubernetes
@@ -25,8 +23,11 @@ I'm currently working as a senior level software engineer and coach at Revelry i
 
 # Experience
 
+## Peek
+__Senior Backend Engineer (2022 - Present)__
+
 ## Revelry
-__Software Engineer / Engineering Coach (2018 - Present)__
+__Software Engineer / Engineering Coach (2018 - 2022)__
 
 I have worked on several different and unique projects during my tenure at Revelry. In addition to my role as a software engineer, I serve as an engineering coach. 
 
@@ -35,13 +36,13 @@ I have worked on several different and unique projects during my tenure at Revel
 - developed a distributed application cache that
   - allowed cached data to survived netsplits during rolling updates
   - used ets to allow the storage of large amounts of data
-  - defined an behaviour for specifying how data is created and when it's should be updated
+  - defined a behaviour for specifying how data is created and when it's should be updated
 - analyzed database usage to improve performance and reduce costs by finding missing and unused indexes
 - implemented a multi-stage deployment process for database changes when necessary
 - created new web services in Docker and deployments in k8s
 - troubleshooting k8s deployments using kubectl/k9s
 - created the in-house time tracking application (Elixir/Phoenix)
-- in addition to working extensively in elixir i also worked many applications in a number of languages and platforms including nodejs/express, javascript, react, react-native, typscript, ruby on rails
+- in addition to working extensively in elixir i also worked many applications in a number of languages and platforms including nodejs/express, javascript, react, react-native, typescript
 
 ## 3Coasts
 __Owner (2011 - 2018)__
