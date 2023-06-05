@@ -1,0 +1,66 @@
+.shell .hll {background-color: #030712}
+.shell {background-color: #030712}
+.shell .unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.shell .err {color: #a5e075; } 
+.shell .o {color: #a9b0bd; } 
+.shell .ow {color: #a9b0bd; } 
+.shell .c {color: #a9b0bd; } /* :comment */
+.shell .c1 {color: #a9b0bd; } /* :comment_single */
+.shell .ch {color: #a9b0bd; } /* :comment_hashbang */
+.shell .cm {color: #a9b0bd; } /* :comment_multiline */
+.shell .cp {color: #a9b0bd; } /* :comment_preproc */
+.shell .cpf {color: #a9b0bd; } /* :comment_preproc_file */
+.shell .cs {color: #a9b0bd; } /* :comment_special */
+.shell .dl {color: #a9b0bd; } /* :string_delimiter */
+.shell .fm {color: #a9b0bd; } /* :name_function_magic */
+.shell .gh {color: #a9b0bd; } /* :generic_heading */
+.shell .go {color: #a9b0bd; } /* :generic_output */
+.shell .gu {color: #a9b0bd; } /* :generic_subheading */
+.shell .il {color: #a9b0bd; } /* :number_integer_long */
+.shell .k {color: #a9b0bd; } /* :keyword */
+.shell .kc {color: #a9b0bd; } /* :keyword_constant */
+.shell .kd {color: #a9b0bd; } /* :keyword_declaration */
+.shell .kn {color: #a9b0bd; } /* :keyword_namespace */
+.shell .kp {color: #a9b0bd; } /* :keyword_pseudo */
+.shell .kr {color: #a9b0bd; } /* :keyword_reserved */
+.shell .kt {color: #a9b0bd; } /* :keyword_type */
+.shell .m {color: #a9b0bd; } /* :number */
+.shell .mb {color: #a9b0bd; } /* :number_bin */
+.shell .mf {color: #a9b0bd; } /* :number_float */
+.shell .mh {color: #a9b0bd; } /* :number_hex */
+.shell .mi {color: #a9b0bd; } /* :number_integer */
+.shell .mo {color: #a9b0bd; } /* :number_oct */
+.shell .n {color: #a9b0bd; } /* :name_attribute */
+.shell .nc {color: #a9b0bd; } /* :name_attribute */
+.shell .na {color: #a9b0bd; } /* :name_attribute */
+.shell .nf {color: #a9b0bd; } /* :name_function */
+.shell .no {color: #a9b0bd; } /* :name_constant */
+.shell .nt {color: #a9b0bd; } /* :name_tag */
+.shell .nv {color: #a9b0bd; } /* :name_variable */
+.shell .p {color: #a9b0bd; } /* :name_variable */
+.shell .s {color: #a9b0bd; } /* :string */
+.shell .s1 {color: #a9b0bd; } /* :string_single */
+.shell .s2 {color: #a9b0bd; } /* :string_double */
+.shell .sa {color: #a9b0bd; } /* :string_affix */
+.shell .sb {color: #a9b0bd; } /* :string_backtick */
+.shell .sc {color: #a9b0bd; } /* :string_char */
+.shell .sd {color: #a9b0bd; } /* :string_doc */
+.shell .se {color: #a9b0bd; } /* :string_escape */
+.shell .sh {color: #a9b0bd; } /* :string_heredoc */
+.shell .si {color: #a9b0bd; } /* :string_interpol */
+.shell .sr {color: #a9b0bd; } /* :string_regex */
+.shell .ss {color: #a9b0bd; } /* :string_symbol */
+.shell .sx {color: #a9b0bd; } /* :string_other */
+.shell .sx {color: #a9b0bd; } /* :string_sigil */
+.shell .vc {color: #a9b0bd; } /* :name_variable_class */
+.shell .vg {color: #a9b0bd; } /* :name_variable_global */
+.shell .vi {color: #a9b0bd; } /* :name_variable_instance */
+.shell .vm {color: #a9b0bd; } /* :name_variable_magic */

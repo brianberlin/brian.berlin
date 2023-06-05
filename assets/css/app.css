@@ -1,0 +1,39 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "elixir-syntax.css";
+@import "shell-syntax.css";
+
+/* This file is for your main application CSS */
+@font-face {
+  font-family: 'jetbrains';
+  src: url('/fonts/JetBrainsMono-Regular.woff2');
+}
+
+a {
+  @apply text-blue-300;
+}
+
+header {
+  @apply flex flex-col;
+  &>* {
+    @apply flex justify-center;
+  }
+}
+
+h2 {
+  @apply text-2xl font-bold border-b border-gray-600 pb-4 pt-8;
+}
+
+ul {
+  @apply list-disc list-outside pl-8 p-4 leading-6 inline-block ;
+}
+
+li {
+  @apply p-1;
+}
+
+section.content p {
+  @apply my-4;
+}
