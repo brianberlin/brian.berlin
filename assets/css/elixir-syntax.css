@@ -1,0 +1,63 @@
+.elixir .hll {background-color: #030712}
+.elixir {background-color: #030712}
+.elixir .unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.elixir .c {color: #7f848e; font-style: italic; } /* :comment */
+.elixir .c1 {color: #7e838d; } /* :comment_single */
+.elixir .ch {color: #56b6c2; font-style: italic; background-color: #282c34; } /* :comment_hashbang */
+.elixir .cm {color: #56b6c2; font-style: italic; background-color: #282c34; } /* :comment_multiline */
+.elixir .cp {color: #be5046; font-style: italic; background-color: #282c34; } /* :comment_preproc */
+.elixir .cpf {color: #be5046; font-style: italic; background-color: #282c34; } /* :comment_preproc_file */
+.elixir .cs {color: #56b6c2; font-style: italic; background-color: #282c34; } /* :comment_special */
+.elixir .dl {color: #61aeee; } /* :string_delimiter */
+.elixir .fm {color: #c678dd; } /* :name_function_magic */
+.elixir .gh {color: #abb2bf; } /* :generic_heading */
+.elixir .go {color: #282c34; background-color: #282c34; } /* :generic_output */
+.elixir .gu {color: #abb2bf; } /* :generic_subheading */
+.elixir .il {color: #98c379; } /* :number_integer_long */
+.elixir .k {color: #e06c75; } /* :keyword */
+.elixir .kc {color: #e06c75; } /* :keyword_constant */
+.elixir .kd {color: #c678dd; } /* :keyword_declaration */
+.elixir .kn {color: #61afef; } /* :keyword_namespace */
+.elixir .kp {color: #e06c75; font-weight: normal; } /* :keyword_pseudo */
+.elixir .kr {color: #e06c75; } /* :keyword_reserved */
+.elixir .kt {color: #818896; } /* :keyword_type */
+.elixir .m {color: #98c379; } /* :number */
+.elixir .mb {color: #98c379; } /* :number_bin */
+.elixir .mf {color: #98c379; } /* :number_float */
+.elixir .mh {color: #98c379; } /* :number_hex */
+.elixir .mi {color: #98c379; } /* :number_integer */
+.elixir .mo {color: #98c379; } /* :number_oct */
+.elixir .n {color: #abb2bf; } /* :name_attribute */
+.elixir .nc {color: #e4bf7c; } /* :name_attribute */
+.elixir .na {color: #de6b74; } /* :name_attribute */
+.elixir .nf {color: #61afef; } /* :name_function */
+.elixir .no {color: #d09966; } /* :name_constant */
+.elixir .nt {color: #e06c75; } /* :name_tag */
+.elixir .nv {color: #e06c75; } /* :name_variable */
+.elixir .p {color: #d19a66; } /* :name_variable */
+.elixir .s {color: #98c379; } /* :string */
+.elixir .s1 {color: #61aeee; } /* :string_single */
+.elixir .s2 {color: #61aeee; } /* :string_double */
+.elixir .sa {color: #61aeee; } /* :string_affix */
+.elixir .sb {color: #61aeee; } /* :string_backtick */
+.elixir .sc {color: #61aeee; } /* :string_char */
+.elixir .sd {color: #61aeee; } /* :string_doc */
+.elixir .se {color: #61aeee; } /* :string_escape */
+.elixir .sh {color: #61aeee; } /* :string_heredoc */
+.elixir .si {color: #61aeee; } /* :string_interpol */
+.elixir .sr {color: #56b6c2; } /* :string_regex */
+.elixir .ss {color: #56b5c1; } /* :string_symbol */
+.elixir .sx {color: #61aeee; } /* :string_other */
+.elixir .sx {color: #61aeee; } /* :string_sigil */
+.elixir .vc {color: #e06c75; } /* :name_variable_class */
+.elixir .vg {color: #e06c75; } /* :name_variable_global */
+.elixir .vi {color: #e06c75; } /* :name_variable_instance */
+.elixir .vm {color: #e06c75; } /* :name_variable_magic */
