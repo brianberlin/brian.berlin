@@ -74,7 +74,7 @@ defmodule BrianWeb.HomeLive do
     <section>
       <h2>Articles</h2>
       <ul>
-        <li><.link href={~p"/code-coverage"}>Code Coverage in Elixir</.link></li>
+        <%!-- <li><.link href={~p"/code-coverage"}>Code Coverage in Elixir</.link></li> --%>
         <li>
           <a href="https://revelry.co/resources/development/ecto/" target="_blank">
             Ecto, You Got Some 'Splainin To Do
