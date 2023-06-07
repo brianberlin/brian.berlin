@@ -8,6 +8,7 @@ defmodule Brian.Application do
   @impl true
   def start(_type, _args) do
     children = [
+      {Cachex, name: :brian_cache},
       # Start the Telemetry supervisor
       BrianWeb.Telemetry,
       # Start the PubSub system

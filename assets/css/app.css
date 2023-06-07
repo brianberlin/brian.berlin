@@ -2,6 +2,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+
 @import "elixir-syntax.css";
 @import "shell-syntax.css";
 
@@ -36,4 +37,29 @@ li {
 
 section.content p {
   @apply my-4;
+}
+
+#activity-grid {
+  scrollbar-width: none;
+}
+
+/* Chrome, Edge, and Safari */
+#activity-grid::-webkit-scrollbar {
+  /* width: 15px; */
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #111827;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #1e293c;
+  border-radius: 14px;
+  border: 3px solid #111827;
 }

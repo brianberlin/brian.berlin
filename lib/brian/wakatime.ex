@@ -13,9 +13,14 @@ defmodule Brian.Wakatime do
     def fetch_activity do
       url = "https://wakatime.com/share/@7147b01d-e23f-4f70-841a-41eac5c1c21f/155fd3fd-d3b3-44d2-80ba-5e0b307a44b1.json"
 
-      case Req.get(url) do
-        {:ok, %{body: body}} ->
-          {:ok, parse_activity(body)}
+      with {:ok, nil} <- Cachex.get(:brian_cache, :activity),
+           {:ok, %{body: body}} <- Req.get(url) do
+        activity = parse_activity(body)
+        Cachex.put(:brian_cache, :activity, activity, ttl: :timer.minutes(10))
+        {:ok, activity}
+      else
+        {:ok, activity} ->
+          {:ok, activity}
 
         _ ->
           {:error, :not_found}

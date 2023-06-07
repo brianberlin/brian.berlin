@@ -18,19 +18,19 @@ defmodule BrianWeb.HomeLive do
 
     <section>
       <h2>
-        Coding Activity <span phx-update="ignore" id="activity-total" class="text-sm text-gray-600"></span>
+        Coding Activity <span phx-update="ignore" id="activity-total" class="text-sm text-gray-600 block sm:inline"></span>
       </h2>
-      <div :if={@activity} class="flex flex-row pt-4" id="activity-grid">
+      <div :if={@activity} class="flex flex-row pt-4 overflow-auto" id="activity-grid" phx-hook="Draggable">
         <div :for={{_week, totals} <- @activity} class="flex flex-col w-full">
           <div
             :for={%{date: date, total: total} <- totals}
-            class="p-0 sm:p-0.5"
+            class="mt-0.5 mr-0.5"
             data-total={Float.round(total / 60 / 60, 2)}
             data-date={Calendar.strftime(date, "%b %d, %Y")}
             id={"date-#{to_string(date)}"}
             phx-hook="Activity"
           >
-            <div class={"#{color(total)} h-2 md:h-2.5 lg:h-3"} />
+            <div class={"#{color(total)} lg:w-full w-4 h-4"} />
           </div>
         </div>
       </div>

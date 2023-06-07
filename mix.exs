@@ -38,6 +38,7 @@ defmodule Brian.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      {:cachex, "~> 3.6"},
       {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.3", only: [:dev], runtime: false},
       {:esbuild, "~> 0.7", runtime: Mix.env() == :dev},
