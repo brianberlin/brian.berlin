@@ -21,6 +21,7 @@ import "phoenix_html"
 import {Socket} from "phoenix"
 import {LiveSocket} from "phoenix_live_view"
 import topbar from "../vendor/topbar"
+import { draggable } from "./draggable"
 
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
 
@@ -48,6 +49,12 @@ Hooks.Activity = {
       document.getElementById("activity-total").innerHTML = `${date} (${total} hours)`
     })
   },
+}
+
+Hooks.Draggable = {
+  mounted() {
+    draggable(this.el)
+  }
 }
 
 let liveSocket = new LiveSocket("/live", Socket, {params: {_csrf_token: csrfToken}, hooks: Hooks})

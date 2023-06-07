@@ -283,8 +283,7 @@ defmodule BrianWeb.CoreComponents do
   end
 
   def input(%{type: "checkbox", value: value} = assigns) do
-    assigns =
-      assign_new(assigns, :checked, fn -> Form.normalize_value("checkbox", value) end)
+    assigns = assign_new(assigns, :checked, fn -> Form.normalize_value("checkbox", value) end)
 
     ~H"""
     <div phx-feedback-for={@name}>
@@ -647,7 +646,7 @@ defmodule BrianWeb.CoreComponents do
 
   def makeup(assigns) do
     ~H"""
-    <pre class={@variant}><code><%= Phoenix.HTML.raw(Makeup.highlight_inner_html(Enum.join(render_slot(@inner_block).static))) %></code></pre>
+    <pre class={"#{@variant} overflow-auto"}><code><%= Phoenix.HTML.raw(Makeup.highlight_inner_html(Enum.join(render_slot(@inner_block).static))) %></code></pre>
     """
   end
 end
