@@ -10,11 +10,11 @@ defmodule Brian.MixProject do
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
       deps: deps(),
-      dialyzer: [
-        plt_file: {:no_warn, "priv/plts/dialyzer.plt"}
-      ],
-      preferred_cli_env: [
-        lcov: :test
+      dialyzer: [plt_file: {:no_warn, "priv/plts/dialyzer.plt"}],
+      preferred_cli_env: [lcov: :test],
+      test_coverage: [
+        tool: LcovEx,
+        ignore_paths: ["config/*", "test/support/*"]
       ]
     ]
   end

@@ -44,18 +44,18 @@ jobs:
       with:
         path: _build
         key: build-${{ runner.os }}-${{ env.OTP_VERSION_SPEC }}-${{ env.ELIXIR_VERSION_SPEC }}-${{ hashFiles('mix.lock') }}
-  
+
     - name: Restore PLT cache
       uses: actions/cache@v2
       id: plt-cache
       with:
         key: plt-${{ runner.os }}-${{ env.OTP_VERSION_SPEC }}-${{ env.ELIXIR_VERSION_SPEC }}
         path: priv/plts
-  
+
     - name: Install Mix Dependencies
       if: steps.deps-cache.outputs.cache-hit != 'true'
       run: mix deps.get
-    
+
     - name: Compile
       if: steps.build-cache.outputs.cache-hit != 'true'
       run: mix compile
@@ -69,21 +69,20 @@ jobs:
     - name: Run Tests
       run: mix test --cover --export-coverage default
 
-    - name: Run Coverage Reporter
-      run: |
-        mix coverage_reporter \
-          --github-token ${{ secrets.GITHUB_TOKEN }} \
-          --pull-number ${{ github.event.number }} \
-          --repository ${{ github.repository }} \
-          --head-branch ${{ github.head_ref }} \
-          --commit-sha ${{ github.sha }}
+    - name: Coverage Reporter
+      uses: peek-travel/coverage-reporter@partitioned-lcov-results
+      id: coverage-reporter
+      if: github.event_name == 'pull_request'
+      with:
+        lcov_path: cover/lcov.info
+        coverage_threshold: 80
 
     - name: Create Coverage Report Artifact
       uses: actions/upload-artifact@v3
       with:
         name: code-coverage
         path: cover/reports/coverage_report.txt
-    
+
     - name: Create PLTs
       if: steps.plt-cache.outputs.cache-hit != 'true'
       run: MIX_ENV=dev mix dialyzer --plt
@@ -102,7 +101,7 @@ jobs:
       with:
         path: deps
         key: deps-${{ runner.os }}-${{ env.OTP_VERSION_SPEC }}-${{ env.ELIXIR_VERSION_SPEC }}-${{ hashFiles('mix.lock') }}
-  
+
     - name: Save PLT cache
       id: plt-cache-save
       uses: actions/cache/save@v3
