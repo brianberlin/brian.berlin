@@ -81,7 +81,10 @@ defmodule BrianWeb.HomeLive do
           </a>
         </li>
         <li>
-          <a href="https://web.archive.org/web/20210801113025/https://revelry.co/resources/team/brian-berlin/" target="_blank">
+          <a
+            href="https://web.archive.org/web/20210801113025/https://revelry.co/resources/team/brian-berlin/"
+            target="_blank"
+          >
             Get to Know Brian Berlin: Dad, Amateur Car Racer, and Software Engineer
           </a>
         </li>
