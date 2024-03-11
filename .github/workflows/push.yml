@@ -10,8 +10,10 @@ permissions:
 
 env:
   MIX_ENV: test
-  OTP_VERSION_SPEC: "26.0"
-  ELIXIR_VERSION_SPEC: "1.15"
+  OTP_VERSION_SPEC: "26.2.3"
+  ELIXIR_VERSION_SPEC: "1.16.2"
+  CACHE_KEY:
+  CACHE_RESTORE_KEY:
 
 jobs:
   test:
@@ -22,42 +24,32 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
+    - name: Environment
+      run: |
+        echo "CACHE_KEY=${{ runner.os }}-${{ env.OTP_VERSION_SPEC }}-${{ env.ELIXIR_VERSION_SPEC }}-${{ hashFiles('mix.lock') }}" >> $GITHUB_ENV
+        echo "CACHE_RESTORE_KEY=${{ runner.os }}-${{ env.OTP_VERSION_SPEC }}-${{ env.ELIXIR_VERSION_SPEC }}-" >> $GITHUB_ENV
+
     - name: Elixir
-      uses: erlef/setup-beam@v1.11
+      uses: erlef/setup-beam@v1.17.5
       id: setup
       with:
         otp-version: ${{ env.OTP_VERSION_SPEC }}
         elixir-version: ${{ env.ELIXIR_VERSION_SPEC }}
-      env:
-        ImageOS: ubuntu20
 
-    - name: Restore Deps Cache
-      uses: actions/cache/restore@v3
-      id: deps-cache
+    - name: Restore Cache
+      uses: actions/cache/restore@v4
+      id: cache
       with:
-        path: deps
-        key: deps-${{ runner.os }}-${{ env.OTP_VERSION_SPEC }}-${{ env.ELIXIR_VERSION_SPEC }}-${{ hashFiles('mix.lock') }}
-
-    - name: Restore Build Cache
-      uses: actions/cache/restore@v3
-      id: build-cache
-      with:
-        path: _build
-        key: build-${{ runner.os }}-${{ env.OTP_VERSION_SPEC }}-${{ env.ELIXIR_VERSION_SPEC }}-${{ hashFiles('mix.lock') }}
-
-    - name: Restore PLT cache
-      uses: actions/cache@v2
-      id: plt-cache
-      with:
-        key: plt-${{ runner.os }}-${{ env.OTP_VERSION_SPEC }}-${{ env.ELIXIR_VERSION_SPEC }}
-        path: priv/plts
+        path: |
+          deps
+          _build
+        key: ${{ env.CACHE_KEY }}
+        restore-keys: ${{ env.CACHE_RESTORE_KEY }}
 
     - name: Install Mix Dependencies
-      if: steps.deps-cache.outputs.cache-hit != 'true'
       run: mix deps.get
 
     - name: Compile
-      if: steps.build-cache.outputs.cache-hit != 'true'
       run: mix compile
 
     - name: Check Formatting
@@ -67,52 +59,25 @@ jobs:
       run: mix credo --strict
 
     - name: Run Tests
-      run: mix test --cover --export-coverage default
+      run: mix test --cover
 
-    - name: Run Coverage Reporter
-      run: |
-        mix coverage_reporter \
-          --github-token ${{ secrets.GITHUB_TOKEN }} \
-          --pull-number ${{ github.event.number }} \
-          --repository ${{ github.repository }} \
-          --head-branch ${{ github.head_ref }} \
-          --commit-sha ${{ github.sha }}
-
-    - name: Create Coverage Report Artifact
-      uses: actions/upload-artifact@v3
+    - name: Code Coverage
+      uses: peek-travel/coverage-reporter@v3
+      if: github.event_name == 'pull_request'
       with:
-        name: code-coverage
-        path: cover/reports/coverage_report.txt
+        lcov_path: cover/lcov.info
+        coverage_threshold: 90
 
     - name: Create PLTs
-      if: steps.plt-cache.outputs.cache-hit != 'true'
       run: MIX_ENV=dev mix dialyzer --plt
 
     - name: Run dialyzer
       run: MIX_ENV=dev mix dialyzer --format github
 
     - name: Save Build Cache
-      uses: actions/cache/save@v3
+      uses: actions/cache/save@v4
       with:
-        path: _build
-        key: build-${{ runner.os }}-${{ env.OTP_VERSION_SPEC }}-${{ env.ELIXIR_VERSION_SPEC }}-${{ hashFiles('mix.lock') }}
-
-    - name: Save Deps Cache
-      uses: actions/cache/save@v3
-      with:
-        path: deps
-        key: deps-${{ runner.os }}-${{ env.OTP_VERSION_SPEC }}-${{ env.ELIXIR_VERSION_SPEC }}-${{ hashFiles('mix.lock') }}
-
-    - name: Save PLT cache
-      id: plt-cache-save
-      uses: actions/cache/save@v3
-      with:
-        path: priv/plts
-        key: plt-${{ runner.os }}-${{ env.OTP_VERSION_SPEC }}-${{ env.ELIXIR_VERSION_SPEC }}
-
-    - name: Create Dependabot Branch
-      uses: peterjgrainger/action-create-branch@v2.2.0
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        branch: 'dependabot'
+        path: |
+          deps
+          _build
+        key: ${{ env.CACHE_KEY }}
