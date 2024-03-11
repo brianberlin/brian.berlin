@@ -2,13 +2,17 @@ version: 2
 updates:
   - package-ecosystem: mix
     directory: "/"
+    target-branch: "dependabot"
+    insecure-external-code-execution: allow
     schedule:
       interval: daily
   - package-ecosystem: github-actions
     directory: "/"
+    target-branch: "dependabot"
     schedule:
       interval: daily
   - package-ecosystem: docker
     directory: "/"
+    target-branch: "dependabot"
     schedule:
       interval: daily
