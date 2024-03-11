@@ -10,12 +10,9 @@ defmodule Brian.MixProject do
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
       deps: deps(),
-      dialyzer: [
-        plt_file: {:no_warn, "priv/plts/dialyzer.plt"}
-      ],
-      preferred_cli_env: [
-        lcov: :test
-      ]
+      dialyzer: dialyzer(),
+      preferred_cli_env: [lcov: :test],
+      test_coverage: [tool: LcovEx]
     ]
   end
 
@@ -32,6 +29,14 @@ defmodule Brian.MixProject do
   # Specifies which paths to compile per environment.
   defp elixirc_paths(:test), do: ["lib", "test/support"]
   defp elixirc_paths(_), do: ["lib"]
+
+  defp dialyzer do
+    [
+      ignore_warnings: ".dialyzer_ignore.exs",
+      plt_core_path: "_build/#{Mix.env()}/plts",
+      plt_local_path: "_build/#{Mix.env()}/plts"
+    ]
+  end
 
   # Specifies your project dependencies.
   #
