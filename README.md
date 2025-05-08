@@ -57,6 +57,13 @@ Key contributions and projects:
   - Optimized search relevance algorithms to improve conversion rates and user satisfaction
   - Built a scalable system capable of handling millions of activity listings with sub-second query response times
 
+- Engineered an enterprise-grade Elasticsearch infrastructure framework that improved reliability and developer productivity:
+  - Designed and implemented a macro-based Elixir module system for configuring and managing multiple Elasticsearch indexes
+  - Created an intelligent batching system for efficiently transforming database records into Elasticsearch documents
+  - Implemented sophisticated error handling with automatic retry mechanisms for failed indexing operations
+  - Built safeguards including hot swap protection to ensure zero-downtime index rebuilds and prevent partial index states
+  - Reduced index management code by 70% while improving reliability and performance across the platform
+
 - Designed and implemented an end-to-end tipping system that increased partner revenue and guide satisfaction:
   - Developed a seamless tipping experience integrated into the booking flow, increasing partner revenue
   - Created an automated tip distribution system that fairly allocated tips to guides based on configurable rules
