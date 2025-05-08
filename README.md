@@ -51,6 +51,12 @@ Key contributions and projects:
   - Developed customizable reporting tools allowing partners to perform complex comparative analyses across time periods and business segments
   - Implemented performance optimizations that reduced report generation time by 80%
 
+- Architected a high-performance search and discovery system for Peek.com's consumer marketplace:
+  - Designed and implemented sophisticated Elasticsearch indexing strategies to aggregate data from multiple sources
+  - Created a unified search platform that seamlessly integrated Peek partner offerings with multiple third-party experience aggregators
+  - Optimized search relevance algorithms to improve conversion rates and user satisfaction
+  - Built a scalable system capable of handling millions of activity listings with sub-second query response times
+
 - Designed and implemented an end-to-end tipping system that increased partner revenue and guide satisfaction:
   - Developed a seamless tipping experience integrated into the booking flow, increasing partner revenue
   - Created an automated tip distribution system that fairly allocated tips to guides based on configurable rules
