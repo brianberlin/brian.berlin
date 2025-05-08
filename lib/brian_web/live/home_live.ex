@@ -37,12 +37,13 @@ defmodule BrianWeb.HomeLive do
     </section>
 
     <section>
-      <h2>Techical Skills</h2>
+      <h2>Technical Skills</h2>
       <ul>
         <li>Elixir / Erlang / OTP / Phoenix / GraphQL / Liveview / Nerves</li>
-        <li>Javascript / React / Redux / React Native / NodeJS</li>
-        <li>Postgres / MySQL / MongoDB / Redis / DynamoDB</li>
+        <li>Javascript / React / Redux / React Native / Ember / NodeJS</li>
+        <li>Postgres / MySQL / MongoDB / Redis / DynamoDB / Elasticsearch</li>
         <li>Docker / Kubernetes</li>
+        <li>New Relic / Prometheus / Grafana / Observability</li>
       </ul>
     </section>
 
