@@ -1,10 +1,10 @@
 
 # Brian Berlin
-- (225) 907-0291  
-- [bri@nberl.in](mailto:bri@nberl.in) 
-- [Github](https://github.com/brianberlin) 
+- (225) 907-0291
+- [bri@nberl.in](mailto:bri@nberl.in)
+- [Github](https://github.com/brianberlin)
 
-I'm currently working as a senior software engineer at Peek. 
+I'm a senior software engineer with expertise in Elixir and web development, currently open to new opportunities.
 
 # Technical Skills
 
@@ -24,12 +24,37 @@ I'm currently working as a senior software engineer at Peek.
 # Experience
 
 ## Peek
-__Senior Backend Engineer (2022 - Present)__
+__Senior Backend Engineer (2022 - 2025)__
+
+Peek offers software to the experience industry. Their customers operate businesses such as ghost tours, zip line experiences, boat rentals, etc. As a senior backend engineer, I worked on a large Elixir codebase that powered the flagship Peek Pro software.
+
+Key contributions and projects:
+
+- Led the development of Peek CoPilot, integrating various AI technologies to provide valuable insights to partners:
+  - Created a system that summarized consumer reviews, highlighting positive and negative feedback with suggested areas for improvement
+  - Developed AI-powered pricing analysis that compared partners' offerings to market competitors and suggested optimized pricing strategies
+
+- Helped develop a new messaging outbox system:
+  - Designed for managing the massive volume of emails and text messages sent to consumers
+  - Implemented an Elasticsearch indexing strategy to make message data easily accessible through a frontend interface
+  - Enabled partners to review sent messages and view scheduled future communications
+
+- Led the development of a second-generation waiver system:
+  - Enabled waivers to be assigned to purchased bookings
+  - Implemented functionality for waivers to be signed by guests and minors participating in activities
+
+- Spearheaded the creation of more accurate and accessible reporting dashboards:
+  - Leveraged AlloyDB to create data aggregates for comprehensive reporting
+  - Enabled partners to run various reports comparing revenue per activity against historical data
+  - Provided tools for analyzing business performance across different time periods
+
+- Created a custom code coverage reporter that aggregated coverage data in CI runs and generated PR annotations showing areas lacking coverage ([GitHub Repository](https://github.com/peek-travel/coverage-reporter))
+
 
 ## Revelry
 __Software Engineer / Engineering Coach (2018 - 2022)__
 
-I have worked on several different and unique projects during my tenure at Revelry. In addition to my role as a software engineer, I serve as an engineering coach. 
+I have worked on several different and unique projects during my tenure at Revelry. In addition to my role as a software engineer, I serve as an engineering coach.
 
 - used logging/telemetry/prometheus/grafana to setup more observable applications
 - gained experience with libcluster strategies to create locally clustered applications for testing as well as production applications managed by kubernetes
@@ -47,12 +72,12 @@ I have worked on several different and unique projects during my tenure at Revel
 ## 3Coasts
 __Owner (2011 - 2018)__
 
-Operated a web design consultancy. 3Coasts designed/developed solutions for our partners to meet there marketing goals. 
+Operated a web design consultancy. 3Coasts designed/developed solutions for our partners to meet there marketing goals.
 
-## GradSquare 
+## GradSquare
 __Co-Founder (2015 - 2016)__
 
-GradSquare's mission was to bridge the gap between universities and industry. A centralized platform where employers/recruiters could easily find graduates from every university, and universities could get actionable insights on the market traction of their degree programs. 
+GradSquare's mission was to bridge the gap between universities and industry. A centralized platform where employers/recruiters could easily find graduates from every university, and universities could get actionable insights on the market traction of their degree programs.
 
 As the sole techonologist for GradSquare I was the graphic designer and software engineer. Below are some screenshots of the application that was created.
 
