@@ -37,19 +37,27 @@ defmodule BrianWeb.HomeLive do
     </section>
 
     <section>
-      <h2>Techical Skills</h2>
+      <h2>Technical Skills</h2>
       <ul>
         <li>Elixir / Erlang / OTP / Phoenix / GraphQL / Liveview / Nerves</li>
-        <li>Javascript / React / Redux / React Native / NodeJS</li>
-        <li>Postgres / MySQL / MongoDB / Redis / DynamoDB</li>
+        <li>Javascript / React / Redux / React Native / Ember / NodeJS</li>
+        <li>Postgres / MySQL / MongoDB / Redis / DynamoDB / Elasticsearch</li>
         <li>Docker / Kubernetes</li>
+        <li>New Relic / Prometheus / Grafana / Observability</li>
       </ul>
     </section>
 
     <section>
       <h2>Open Source</h2>
       <ul>
-        <li><a href="https://github.com/brianberlin/fleature">Fleature - Feature Flags</a></li>
+        <li>
+          <a href="https://github.com/peek-travel/coverage-reporter">Coverage Reporter</a>
+          - GitHub Action that analyzes test coverage and adds PR annotations highlighting areas needing additional tests.
+        </li>
+        <li>
+          <a href="https://github.com/brianberlin/fleature">Fleature</a>
+          - A feature flag system for Elixir applications.
+        </li>
         <li>
           <a href="https://github.com/nerves-hub/nerves_hub_web/pull/676">
             NervesHubWeb - Ability to delete accounts
@@ -59,14 +67,6 @@ defmodule BrianWeb.HomeLive do
           <a href="https://github.com/nerves-hub/nerves_hub_web/pulls?q=is%3Apr+author%3Abrianberlin+is%3Aclosed">
             NervesHubWeb - Other contributions
           </a>
-        </li>
-        <li>
-          <a href="https://hex.pm/packages/ecto_filters">EctoFilters</a>
-          - Provides a consistent way to transform request params into ecto query expressions.
-        </li>
-        <li>
-          <a href="https://hex.pm/packages/ecto_explain">EctoExplain</a>
-          - A simple Elixir package that makes explaining ecto queries easy.
         </li>
       </ul>
     </section>
