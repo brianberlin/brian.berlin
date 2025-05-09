@@ -18,7 +18,7 @@ env:
 jobs:
   test:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
     - name: Checkout
@@ -30,7 +30,7 @@ jobs:
         echo "CACHE_RESTORE_KEY=${{ runner.os }}-${{ env.OTP_VERSION_SPEC }}-${{ env.ELIXIR_VERSION_SPEC }}-" >> $GITHUB_ENV
 
     - name: Elixir
-      uses: erlef/setup-beam@v1.17.5
+      uses: erlef/setup-beam@v1.18
       id: setup
       with:
         otp-version: ${{ env.OTP_VERSION_SPEC }}
@@ -63,7 +63,6 @@ jobs:
 
     - name: Code Coverage
       uses: peek-travel/coverage-reporter@v3
-      if: github.event_name == 'pull_request'
       with:
         lcov_path: cover/lcov.info
         coverage_threshold: 90

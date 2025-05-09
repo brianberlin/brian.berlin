@@ -55,8 +55,7 @@ defmodule BrianWeb.HomeLive do
           - GitHub Action that analyzes test coverage and adds PR annotations highlighting areas needing additional tests.
         </li>
         <li>
-          <a href="https://github.com/brianberlin/fleature">Fleature</a>
-          - A feature flag system for Elixir applications.
+          <a href="https://github.com/brianberlin/fleature">Fleature</a> - A feature flag system for Elixir applications.
         </li>
         <li>
           <a href="https://github.com/nerves-hub/nerves_hub_web/pull/676">
