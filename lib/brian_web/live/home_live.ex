@@ -3,7 +3,9 @@ defmodule BrianWeb.HomeLive do
 
   def mount(_params, _session, socket) do
     send(self(), :fetch_data)
-    {:ok, assign(socket, :activity, nil)}
+    {:ok, socket
+      |> assign(:activity, nil)
+      |> assign(:page_title, "Brian Berlin - Senior Software Engineer")}
   end
 
   def render(assigns) do
