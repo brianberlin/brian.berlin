@@ -14,14 +14,29 @@ I'm a senior software engineer specializing in Elixir and distributed systems, w
 - Docker / Kubernetes
 - New Relic / Prometheus / Grafana / Observability
 
-# Open Source
-
-- [Coverage Reporter](https://github.com/peek-travel/coverage-reporter) - GitHub Action that analyzes test coverage and adds PR annotations highlighting areas needing additional tests.
-- [Fleature - Feature Flags](https://github.com/brianberlin/fleature) - Feature flag system for Elixir applications.
-- [NervesHubWeb - Ability to delete accounts](https://github.com/nerves-hub/nerves_hub_web/pull/676) - Added account deletion functionality to the NervesHub platform.
-- [NervesHubWeb - Other contributions](https://github.com/nerves-hub/nerves_hub_web/pulls?q=is%3Apr+author%3Abrianberlin+is%3Aclosed) - Various improvements to the NervesHub web interface.
-
 # Experience
+
+## Fillogic
+__Senior Software Engineer (2025 - Present)__
+
+Fillogic is a third-party logistics provider specializing in reverse logistics and warehouse management for e-commerce brands. The company operates warehouse facilities that handle returns processing, inventory management, order fulfillment, and last-mile delivery coordination for customers like Levi's, Phillip Morris, Pact, FIGS, and others. Their platform manages the entire lifecycle of returned merchandise—from initial RMA creation through grading, repackaging, resale listing, and redistribution—while also supporting forward logistics operations like B2C packing and shipping.
+
+Key contributions and projects:
+
+**Streamlined Mobile Label Printing System** - Architected and implemented an end-to-end mobile label printing system that increased return processing throughput by 30% by eliminating inefficient bulk printing workflows. Previously, workers had to walk to hardwired laptops to print labels in bulk for multi-item RMAs, leading to frequent tag misplacement and significant time waste. The solution integrated three components: a dynamic ZPL template engine with customer-specific customization, NFC printer pairing that enables one-tap printer configuration at shift start, and direct Zebra printer integration in the React Native app allowing workers to print labels on-demand with a single button press. This eliminated worker movement between stations and enabled continuous grading and labeling at individual workstations, dramatically reducing errors and improving operational efficiency.
+
+**Truck-based Development Workflow** - Architected trunk-based development workflow with label-triggered staging deployments, enabling safe pre-production testing and reducing deployment risk
+
+**Error Tracking** - Migrated error tracking from Rollbax to Sentry across backend and mobile applications, improving production debugging capabilities and reducing MTTR by 40%
+
+**Mobile Builds** - Implemented automated CI/CD pipelines for React Native mobile builds with GitHub Actions, including automated APK generation, version management, and release distribution
+
+**Time Management** - Built complete time management system with clock in/out, break tracking, payroll reporting, and PostgreSQL advisory locks to prevent race conditions, processing 500+ daily time entries
+
+**Feature Flags** - Developed real-time feature flag system with Phoenix Channels, enabling targeted feature rollouts and A/B testing without deployments
+
+**Barcode Scanning** - Refactored barcode scanner integration for Zebra handheld devices using native DataWedge SDK, improving scan reliability and adding automatic profile configuration with factory reset capability
+
 
 ## Peek
 __Senior Backend Engineer (2022 - 2025)__
@@ -80,15 +95,6 @@ As the sole technologist for GradSquare, I was the graphic designer and software
  - [Find a Job](https://brian.berlin/images/gradsquare/find-a-job.png)
  - [In App Messaging](https://brian.berlin/images/gradsquare/in-app-messaging.png)
 
-### Airpnp
-__Co-Founder (2014)__
-
-The idea for Airpnp came while having drinks at a bar during Mardi Gras. It was a requirement that the patrons of the bar purchase a drink (be a paying customer) in order to use the restroom. This started a conversation about an idea to create an "Airbnb for bathrooms". Host users of the app could make their restrooms available while other users could find nearby bathrooms and pay per pee (or pooh) in the app. Users could even contact the hosts via anonymized text and voice chat through the app. We leveraged API services from Twilio and Stripe to make it all happen.
-
- - [Product Hunt](https://www.producthunt.com/posts/airpnp)
- - [Buzzfeed](https://www.buzzfeednews.com/article/josephbernstein/i-spent-a-day-using-an-app-for-bathroom-emergencies-and-i-al)
- - [Fox Business News](https://video.foxbusiness.com/v/3441693470001/#sp=show-clips)
-
 ## Bclip Productions
 __Software Engineer (2002 - 2011)__
 
@@ -96,3 +102,9 @@ My introduction to software engineering was made possible through my job at Bcli
 
  - [Sonny's Car Wash Dual Screen Kiosk](https://brian.berlin/images/bclip/sonnys-kiosk.jpeg)
  - [Sonny's Car Wash Touch Screen Kiosk](https://brian.berlin/images/bclip/sonnys-kiosk-2.jpeg)
+
+# Open Source
+
+- [Coverage Reporter](https://github.com/peek-travel/coverage-reporter) - GitHub Action that analyzes test coverage and adds PR annotations highlighting areas needing additional tests.
+- [NervesHubWeb - Ability to delete accounts](https://github.com/nerves-hub/nerves_hub_web/pull/676) - Added account deletion functionality to the NervesHub platform.
+- [NervesHubWeb - Other contributions](https://github.com/nerves-hub/nerves_hub_web/pulls?q=is%3Apr+author%3Abrianberlin+is%3Aclosed) - Various improvements to the NervesHub web interface.

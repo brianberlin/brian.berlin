@@ -11,9 +11,13 @@ defmodule Brian.MixProject do
       aliases: aliases(),
       deps: deps(),
       dialyzer: dialyzer(),
-      preferred_cli_env: [lcov: :test],
-      test_coverage: [tool: LcovEx]
+      test_coverage: [tool: LcovEx],
+      listeners: [Phoenix.CodeReloader]
     ]
+  end
+
+  def cli do
+    [preferred_envs: [lcov: :test]]
   end
 
   # Configuration for the OTP application.
@@ -43,25 +47,26 @@ defmodule Brian.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:cachex, "~> 3.6"},
+      {:cachex, "~> 4.1"},
       {:credo, "~> 1.7.5", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.3", only: [:dev], runtime: false},
       {:esbuild, "~> 0.7", runtime: Mix.env() == :dev},
       {:floki, ">= 0.30.0", only: :test},
       {:jason, "~> 1.4.1"},
       {:lcov_ex, "~> 0.3.2"},
-      {:makeup_elixir, "~> 0.16.1"},
+      {:makeup_elixir, "~> 1.0"},
       {:makeup, "~> 1.1"},
-      {:mox, "~> 1.0", only: :test},
-      {:phoenix_html, "~> 4.1.1"},
+      {:mox, "~> 1.2", only: :test},
+      {:phoenix_html, "~> 4.3"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:phoenix_live_view, "~> 0.20.12"},
-      {:phoenix, "~> 1.7.3"},
+      {:phoenix_live_view, "~> 1.0"},
+      {:phoenix, "~> 1.8"},
       {:plug_cowboy, "~> 2.5"},
-      {:req, "~> 0.4.13"},
-      {:tailwind, "~> 0.2.0", runtime: Mix.env() == :dev},
-      {:telemetry_metrics, "~> 0.6"},
-      {:telemetry_poller, "~> 1.0"}
+      {:req, "~> 0.5.15"},
+      {:tailwind, "~> 0.4.1", runtime: Mix.env() == :dev},
+      {:telemetry_metrics, "~> 1.1"},
+      {:telemetry_poller, "~> 1.0"},
+      {:castore, "~> 1.0"}
     ]
   end
 

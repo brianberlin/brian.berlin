@@ -18,7 +18,6 @@ defmodule BrianWeb.Router do
     pipe_through :browser
 
     live "/", HomeLive
-    live "/code-coverage", CodeCoverageLive
   end
 
   # Other scopes may use custom stacks.
